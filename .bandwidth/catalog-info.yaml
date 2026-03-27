@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  schemaVersion: v1.0.0
+  name: everything-claude-code-location
+  description: Links to additional entities in the everything-claude-code repository.
+  annotations:
+    github.com/project-slug: Bandwidth/everything-claude-code
+spec:
+  targets:
+    - ./component.yaml
