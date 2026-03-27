@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  schemaVersion: v1.0.0
+  name: everything-claude-code
+  description: Forked from https://github.com/affaan-m/everything-claude-code
+  annotations:
+    github.com/project-slug: Bandwidth/everything-claude-code
+  organization: BW
+  costCenter: undefined
+  platformType: AWS
+  buildPlatform: GitHub Actions
+spec:
+  type: Utility
+  owner: github/band-cx
+  lifecycle: Prototype
+  dependsOn:
+    - resource:platform/GitHub Actions
+    - resource:cost-center/undefined
